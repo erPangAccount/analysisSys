@@ -34,11 +34,13 @@
                     @csrf
                     <h1>成绩分析—登录</h1>
                     <div>
-                        <input type="text" class="form-control" placeholder="用户名" required="" />
+                        <input type="text" class="form-control" name="email" placeholder="用户名" required="" value="{{old('email')}}"/>
                     </div>
                     <div>
-                        <input type="password" class="form-control" placeholder="密码" required="" />
+                        <input type="password" class="form-control" name="password" placeholder="密码" required="" value="{{old('password')}}" />
                     </div>
+
+                    @include('v1.layouts.errors')
                     <div>
                         <span class="btn btn-default submit" onclick="login_form.submit()">登录</span>
                         <a class="reset_pass" href="#">Lost your password?</a>
@@ -65,7 +67,8 @@
 
         <div id="register" class="animate form registration_form">
             <section class="login_content">
-                <form>
+                @include('v1.layouts.errors')
+                <form method="post" >
                     <h1>Create Account</h1>
                     <div>
                         <input type="text" class="form-control" placeholder="Username" required="" />
@@ -102,3 +105,4 @@
 </div>
 </body>
 </html>
+

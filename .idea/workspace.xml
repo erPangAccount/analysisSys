@@ -117,6 +117,15 @@
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kWChq50f7qWkUcMwm7LhiBND97" />
@@ -133,8 +142,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\wwwroot\analysisSys\app\Model" />
-      <recent name="D:\wwwroot\analysisSys\public" />
+      <recent name="D:\wwwroot\analysisSys\app\Exports\Demo" />
+      <recent name="D:\wwwroot\analysisSys\app\Http\Controllers\V1\Admin" />
+      <recent name="D:\wwwroot\analysisSys\app\Http\Controllers\V1" />
+      <recent name="D:\wwwroot\analysisSys\app\Http\Controllers\Admin\V1" />
+      <recent name="D:\wwwroot\analysisSys\resources\views\v1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\wwwroot\analysisSys\resources\views\layouts" />
@@ -222,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605807085868</updated>
-      <workItem from="1605807087982" duration="17366000" />
+      <workItem from="1605807087982" duration="29476000" />
     </task>
     <servers />
   </component>
@@ -242,29 +254,69 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605852150802" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1605860696405">
+    <state x="674" y="229" key="#xdebugger.evaluate" timestamp="1605880342276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605860696405" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1605860696405">
+    <state x="674" y="229" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1605880342276" />
+    <state width="602" height="466" key="DebuggerActiveHint" timestamp="1605878770394">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605860696405" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1605860696404">
+    <state width="602" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605878770394" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1605881293483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605860696404" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1605860696405">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1605881293483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605860696405" />
-    <state x="599" y="335" key="NewPhpFileDialog" timestamp="1605836015093">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1605881293483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="599" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605836015093" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605860961714">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1605881293483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605860961714" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1605881293484">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605881293484" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1605881293483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605881293483" />
+    <state x="806" y="194" key="NewPhpFileDialog" timestamp="1605883207252">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="806" y="194" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605883207252" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605884155887">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605884155887" />
   </component>
 </project>
