@@ -30,7 +30,7 @@
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
-                <form name="login_form" method="post" action="{{route('login_p')}}">
+                <form name="login_form" method="post" action="{{route('v1_login_p')}}">
                     @csrf
                     <h1>成绩分析—登录</h1>
                     <div>

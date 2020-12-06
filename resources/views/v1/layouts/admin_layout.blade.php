@@ -28,6 +28,7 @@
     <!-- Custom Theme Style -->
     <link href="{{asset('/static/build/css/custom.min.css')}}" rel="stylesheet">
 
+    @yield('style')
 </head>
 
 
@@ -74,7 +75,7 @@
 {{--                                    <li><a href="form_advanced.html">Advanced Components</a></li>--}}
 {{--                                    <li><a href="form_validation.html">Form Validation</a></li>--}}
 {{--                                    <li><a href="form_wizards.html">Form Wizard</a></li>--}}
-{{--                                    <li><a href="form_upload.html">Form Upload</a></li>--}}
+{{--                                    <li><a href="form_upload.html">Form UploadFacade</a></li>--}}
 {{--                                    <li><a href="form_buttons.html">Form Buttons</a></li>--}}
 {{--                                </ul>--}}
 {{--                            </li>--}}
@@ -304,41 +305,43 @@
 <!-- Bootstrap -->
 <script src="{{asset('/static/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <!-- FastClick -->
-<script src="{{asset('/static/vendors/fastclick/lib/fastclick.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/fastclick/lib/fastclick.js')}}"></script>--}}
 <!-- NProgress -->
-<script src="{{asset('/static/vendors/nprogress/nprogress.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/nprogress/nprogress.js')}}"></script>--}}
 <!-- Chart.js -->
-<script src="{{asset('/static/vendors/Chart.js/dist/Chart.min.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/Chart.js/dist/Chart.min.js')}}"></script>--}}
 <!-- gauge.js -->
-<script src="{{asset('/static/vendors/gauge.js/dist/gauge.min.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/gauge.js/dist/gauge.min.js')}}"></script>--}}
 <!-- bootstrap-progressbar -->
-<script src="{{asset('/static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>--}}
 <!-- iCheck -->
-<script src="{{asset('/static/vendors/iCheck/icheck.min.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/iCheck/icheck.min.js')}}"></script>--}}
 <!-- Skycons -->
-<script src="{{asset('/static/vendors/skycons/skycons.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/skycons/skycons.js')}}"></script>--}}
 <!-- Flot -->
-<script src="{{asset('/static/vendors/Flot/jquery.flot.js')}}"></script>
-<script src="{{asset('/static/vendors/Flot/jquery.flot.pie.js')}}"></script>
-<script src="{{asset('/static/vendors/Flot/jquery.flot.time.js')}}"></script>
-<script src="{{asset('/static/vendors/Flot/jquery.flot.stack.js')}}"></script>
-<script src="{{asset('/static/vendors/Flot/jquery.flot.resize.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/Flot/jquery.flot.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/Flot/jquery.flot.pie.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/Flot/jquery.flot.time.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/Flot/jquery.flot.stack.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/Flot/jquery.flot.resize.js')}}"></script>--}}
 <!-- Flot plugins -->
-<script src="{{asset('/static/vendors/flot.orderbars/js/jquery.flot.orderBars.js')}}"></script>
-<script src="{{asset('/static/vendors/flot-spline/js/jquery.flot.spline.min.js')}}"></script>
-<script src="{{asset('/static/vendors/flot.curvedlines/curvedLines.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/flot.orderbars/js/jquery.flot.orderBars.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/flot-spline/js/jquery.flot.spline.min.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/flot.curvedlines/curvedLines.js')}}"></script>--}}
 <!-- DateJS -->
-<script src="{{asset('/static/vendors/DateJS/build/date.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/DateJS/build/date.js')}}"></script>--}}
 <!-- JQVMap -->
-<script src="{{asset('/static/vendors/jqvmap/dist/jquery.vmap.js')}}"></script>
-<script src="{{asset('/static/vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
-<script src="{{asset('/static/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
+{{--<script src="{{asset('/static/vendors/jqvmap/dist/jquery.vmap.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>--}}
+{{--<script src="{{asset('/static/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>--}}
 <!-- bootstrap-daterangepicker -->
 <script src="{{asset('/static/vendors/moment/min/moment.min.js')}}"></script>
 <script src="{{asset('/static/vendors/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
 
-<!-- Custom Theme Scripts -->
-<script src="{{asset('/static/build/js/custom.min.js')}}"></script>
 
+<!-- Custom Theme Scripts -->
+<script src="{{asset('/static/build/js/custom.js')}}"></script>
+
+@yield('script')
 </body>
 </html>

@@ -855,7 +855,7 @@ $().cropper('getCroppedCanvas', {
   height: 90
 });
 
-// Upload cropped image to server if the browser supports `HTMLCanvasElement.toBlob`
+// UploadFacade cropped image to server if the browser supports `HTMLCanvasElement.toBlob`
 $().cropper('getCroppedCanvas').toBlob(function (blob) {
   var formData = new FormData();
 
@@ -867,10 +867,10 @@ $().cropper('getCroppedCanvas').toBlob(function (blob) {
     processData: false,
     contentType: false,
     success: function () {
-      console.log('Upload success');
+      console.log('UploadFacade success');
     },
     error: function () {
-      console.log('Upload error');
+      console.log('UploadFacade error');
     }
   });
 });

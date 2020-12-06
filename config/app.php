@@ -235,6 +235,11 @@ return [
          * excel
          */
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
+        /**
+         * 文件 自定义
+         */
+        'CustomFile' => App\Facades\CustomFileFacade::class
     ],
 
 ];

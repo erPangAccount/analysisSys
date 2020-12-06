@@ -20,10 +20,6 @@ Route::get('/', function () {
  * 1.0版本 为实现简单的成绩分析,没有添加任何其他功能
  */
 Route::group(['prefix' => 'v1'], function () {
-    /**
-     * 后台管理页面
-     */
-    Route::get('/admin', 'V1\Admin\IndexController@index')->middleware('auth')->name('v1_admin');
 
     /**
      * 后台登录
@@ -33,11 +29,27 @@ Route::group(['prefix' => 'v1'], function () {
     Route::get('/logout', 'V1\Admin\LoginController@logout')->name('v1_logout');
 
     /**
-     * 简单成绩分析功能
+     * 需要登录后才可以访问的页面
      */
-    Route::group(['prefix' => 'analysis'], function () {
-        Route::get('/index', 'V1\Admin\SampleAnalysisController@index')->name('v1_sampleAnalysis');
-        Route::get('/export', 'V1\Admin\SampleAnalysisController@exportExcel')->name('v1_exportExcel');
+    Route::group(['middleware' => 'auth'], function () {
+        /**
+         * 后台管理页面
+         */
+        Route::get('/admin', 'V1\Admin\IndexController@index')->name('v1_admin');
+
+        /**
+         * 简单成绩分析功能
+         */
+        Route::group(['prefix' => 'analysis'], function () {
+            Route::get('/index', 'V1\Admin\SampleAnalysisController@index')->name('v1_sampleAnalysis');
+
+            Route::post('/step2', 'V1\Admin\SampleAnalysisController@step2')->name('v1_analysis_step2');
+
+
+            Route::post('/analysis', 'V1\Admin\SampleAnalysisController@analysis')->name('v1_analysis');
+            Route::get('/export', 'V1\Admin\SampleAnalysisController@exportExcel')->name('v1_exportExcel');
+            Route::get('/testApi', 'V1\Admin\SampleAnalysisController@testApi')->name('testApi');
+        });
     });
 });
 
